@@ -1,0 +1,129 @@
+body {
+  font-family: Verdana, sans-serif;
+}
+.slide {
+  /*position: absolute;
+  width: 95%;*/
+}
+.slide {
+  display: none;
+}
+.slide[data-slide="themes-list-grammar"] {
+  display: block;
+}
+.unit-item {
+  background: #FFF;
+  padding: 10px;
+  border:1px solid #3e2723;
+  margin: 5px 0;
+  line-height: 24px;
+  font-size: 20px;
+}
+.answer,
+.variant {
+  display:inline-block;
+  min-width:20px;
+  height: 26px;
+  border-bottom: 2px solid #000;
+  cursor: pointer;
+}
+.variant {
+  background: #ffccbc;
+  margin-top: 10px;
+  text-align: center;
+  min-width: 80px;
+  border: none;
+}
+.vars {
+  border-top: 1px solid #888;
+  padding-top: 5px;
+  margin-top: 5px;
+}
+.ready {
+  background: #FEF;
+}
+.correct {
+  border-bottom: 2px solid #2e7d32;
+}
+.wrong {
+  border-bottom: 2px solid #c62828;
+}
+.correct-unit {
+  border: 1px solid #2e7d32;
+  background: #e8f5e9;
+}
+.wrong-unit {
+  border: 1px solid #c62828;
+  background: #ffebee;
+}
+.unitsInTest {
+  width: 40px;
+}
+.themes-list {
+  padding-left: 0;
+  list-style: none;
+}
+.themes-list li:nth-of-type(odd) {
+    background-color: #F3F3F3;
+}
+.themes-list label {
+  width: 100%;
+}
+/* input[type="button"] {
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px;
+  border: 1px solid transparent;
+  cursor: pointer;
+} */
+.center {
+  text-align: center;
+}
+
+@media (max-width: 601px) {
+  body {
+    font-size: 26px;
+  }
+  input,
+  .btn {
+    font-size: 28px;
+  }
+  .unitsInTest {
+    width: 60px;
+  }
+  .unit-item {
+    line-height: 28px;
+    font-size: 24px;
+  }
+  .variant {
+    line-height: 18px;
+    height: 28px;
+    padding: 5px;
+  }
+  .answer {
+    line-height: 18px;
+    height: 26px;
+    padding: 5px;
+  }
+
+}
+.tests-progress {
+  min-height: 20px;
+  overflow: hidden;
+}
+.themes-list-grammar label {
+  cursor: pointer;
+}
+.checkbox-changer {
+  font-size: 1.2em;
+}
+.theme-list-checkbox {
+  position: absolute;
+  left: -1000px;
+}
+.checkbox-changer:before {
+  content: "\e157";
+}
+.themes-list-grammar .theme-list-checkbox:checked + .checkbox-changer:before {
+  content: "\e067";
+}
